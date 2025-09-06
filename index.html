@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Progreso Chamber of Commerce - Resource hub for businesses and community members.">
+  <meta name="author" content="Angela Ordaz">
+  <title>Progreso Chamber of Commerce</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/home.css">
+
+  <!-- JS -->
+  <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231</h1>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Example SVG logo placeholder -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+      <span>Angela Ordaz</span>
+    </div>
+    <button id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+        <li><a href="#">Other</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>This website serves as a resource hub for businesses in Progreso, Mexico. It provides information on events, networking opportunities, business directories, and supports local shopping and activities.</p>
+    </section>
+
+    <section>
+      <h2>Target Market</h2>
+      <p>Business owners and patrons in Progreso and surrounding areas.</p>
+    </section>
+
+    <section id="courses">
+      <h2>Certificate Courses</h2>
+      <div class="filters">
+        <button data-filter="all">All Courses</button>
+        <button data-filter="wdd">WDD Courses</button>
+        <button data-filter="cse">CSE Courses</button>
+      </div>
+      <div id="courseList" class="course-grid"></div>
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+    <p>
+      &copy; <span id="year"></span> | Angela Ordaz | Mexico
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
 </body>
 </html>

@@ -1,0 +1,171 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #5A189A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 2rem;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Course section */
+.filters {
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #5A189A;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background: #5A189A;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.course {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.course.completed {
+  background: #E0AAFF;       /* light purple */
+  border: 2px solid #5A189A; /* dark purple border */
+  position: relative;
+}
+
+.course.completed::after {
+  content: "✓ Completed";
+  color: #fff;
+  background: #5A189A; /* dark purple badge */
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.course.not-completed {
+  background: #fff;
+  border: 2px solid #5A189A;
+  position: relative;
+}
+
+.course.not-completed::after {
+  content: "In Progress";
+  color: #5A189A;
+  background: #E0AAFF; /* light purple badge */
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Footer */
+footer {
+  background:#5A189A;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .social {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background: #E0AAFF;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  header button {
+    display: block;
+  }
+}
