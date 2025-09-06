@@ -51,5 +51,11 @@ document.querySelectorAll(".filters button").forEach(btn => {
   });
 });
 
+// Get current year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Get last modified date of document
+document.getElementById("lastModified").textContent = document.lastModified;
+
 // Default view
 displayCourses("all");
