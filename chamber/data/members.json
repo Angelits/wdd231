@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Henrys Supplies",
+    "address": "22 Paseo maritimo, Progreso",
+    "phone": "223-555-1133",
+    "url": "https://henryssupplies.com",
+    "image": "images/supplies.webp",
+    "membership": 3,
+    "info": "Gold level supplier of beach equipment."
+  },
+  {
+    "name": "Restaurant La Concha",
+    "address": "45 Malecon #66, Progreso",
+    "phone": "228-987-2221",
+    "url": "https://laconcha.com",
+    "image": "images/sea-shell.webp",
+    "membership": 2,
+    "info": "Serving food in the heart of Progreso."
+  },
+  {
+    "name": "Artesanias Estrella",
+    "address": "Calle 2 Morelos, Progreso",
+    "phone": "245-655-1889",
+    "url": "https://artesaniasestrella.com",
+    "image": "images/artesania.webp",
+    "membership": 1,
+    "info": "Great quality traditional crafts."
+  },
+  {
+    "name": "Brillante Sunglasses Shop",
+    "address": "49 x 78 N St, Progreso",
+    "phone": "224-098-2354",
+    "url": "https://brillantesunglasses.com",
+    "image": "images/sunglasses.webp",
+    "membership": 2,
+    "info": "Trendy sunglasses for sunny days."
+  },
+  {
+    "name": "Coco Lovers",
+    "address": "93 Hacienda Ct, Progreso",
+    "phone": "227-009-1647",
+    "url": "https://cocolovers.com",
+    "image": "images/coconut.webp",
+    "membership": 3,
+    "info": "Amazing coco pastries."
+  },
+  {
+    "name": "Plaza del Mar",
+    "address": "12 Agua Clara x 33, Progreso",
+    "phone": "229-675-3242",
+    "url": "https://plazadelmar.com",
+    "image": "images/sea.webp",
+    "membership": 3,
+    "info": "Popular mall close to the beach."
+  },
+  {
+    "name": "Corchito",
+    "address": "155 E St, Progreso",
+    "phone": "220-475-2142",
+    "url": "https://corchito.com",
+    "image": "images/corchito.webp",
+    "membership": 2,
+    "info": "Traveling outdoor products shop."
+  }
+]

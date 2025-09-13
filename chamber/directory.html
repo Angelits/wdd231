@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progreso Chamber of Commerce | Directory</title>
+  <meta name="description" content="Progreso Chamber of Commerce - Resource hub for businesses and community members.">
+  <meta name="author" content="Angela Ordaz">
+   <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Progreso Chamber of Commerce | Directory">
+    <meta property="og:description" content="Directory of members of the Progreso Chamber of Commerce. Discover local businesses and services.">
+    <meta property="og:image" content="images/social-preview.png">
+    <meta property="og:url" content="https://www.Progreso.org/directory.html">
+  <link rel="stylesheet" href="styles/directory.css">
+</head>
+<body>
+  <header>
+    <h1 id="tittle">Progreso Chamber of Commerce</h1>
+    <nav> 
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Directory</h2>
+    <div class="view-toggle">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </div>
+    <div id="membersContainer" class="grid-view"></div>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p>5 en el pais, Progreso, Yucatán 222</p>
+      <p>Email: info@progre.org | Phone: (222) 135-7788</p>
+    </div>
+    <div class="dev-info">
+      <p>WDD231 Class Project | Angela Ordaz</p>
+      <p>&copy; <span id="currentYear"></span> Progreso Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/directory.js" defer></script>
+  <scrip type="module" src="data/members.json" defer></script>
+</body>
+</html>
+
+
+   
