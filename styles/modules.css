@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+#sectionNumber {
+  margin: 0 1rem;
+  padding: 0.3rem;
+}
+
+button {
+  margin: 0.5rem 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0074D9;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#sections {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#sections div {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+#sections div:last-child {
+  border-bottom: none;
+}
