@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progreso Chamber of Commerce</title>
+  <meta name="description" content="Official website of the Progreso Chamber of Commerce.">
+  <link rel="stylesheet" href="styles/home.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Progreso Chamber of Commerce | Home">
+  <meta property="og:description" content="Homepage for the Progreso Chamber of Commerce">
+  <meta property="og:image" content="images/social-preview.png">
+  <meta property="og:url" content="https://www.Progreso.org/directory.html">
+</head>
+<body>
+  <!-- Header -->
+  <header role="banner">
+  <span>Progreso Chamber of Commerce</span>
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Open main menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" role="region" aria-label="Hero Section">
+      <img src="images/progreso.jpg" alt="Progreso Chamber Hero Image" loading="lazy">
+      <a href="join.html" class="cta-button">Chamber of Commerce</a>
+    </section>
+
+    <!-- Main Info -->
+    <section class="main-info">
+      <!-- Event Card -->
+      <div id="events" role="region" aria-labelledby="events-title">
+        <h2 id="events-title" class="sr-only">Upcoming Events</h2>
+        <div class="event-card">
+          <h3>Upcoming Event</h3>
+          <div class="card-body">
+            <p>Event details go here</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Weather -->
+      <div class="card card--current" role="region" aria-labelledby="current-weather-title">
+        <div class="card__header">
+          <h3 id="current-weather-title">Current Weather</h3>
+        </div>
+        <div class="card__body">
+          <img src="images/sunny.jpg" alt="Weather Icon" class="weather-icon" id="current-icon">
+          <div class="weather-info">
+            <p id="current-temp"></p>
+            <p id="current-desc"></p>
+            <p id="current-highlow"></p>
+            <p id="current-humidity"></p>
+            <p id="sunrise-sunset"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forecast Weather -->
+      <div class="card card--forecast" role="region" aria-labelledby="forecast-title">
+        <div class="card__header">
+          <h3 id="forecast-title">3-Day Forecast</h3>
+        </div>
+        <div class="card__body">
+          <div class="forecast-list" id="forecast-list">
+            <!-- JS will populate single forecast per day -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spotlights -->
+    <section id="spotlight-section" aria-labelledby="spotlight-title">
+      <h2 id="spotlight-title" class="section-title">Spotlights</h2>
+      <div id="spotlights" class="spotlights" aria-live="polite">
+        <p>Loading spotlights...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="contact-info">
+      <p>5 en el pais, Progreso, Yucatán 222</p>
+      <p>Email: info@progre.org | Phone: (222) 135-7788</p>
+    </div>
+    <div class="social">
+      <a href="#"><img src="youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>WDD231 Class Project | Angela Ordaz</p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
