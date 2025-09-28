@@ -1,0 +1,20 @@
+[
+  {
+    "subject": "WDD",
+    "number": "231",
+    "title": "Web Frontend Development",
+    "credits": 3,
+    "description": "Learn HTML, CSS, and JS basics.",
+    "certificate": "Frontend Certificate",
+    "techStack": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "subject": "CSE",
+    "number": "210",
+    "title": "Programming with JavaScript",
+    "credits": 3,
+    "description": "Introduction to programming with JS.",
+    "certificate": "Web Certificate",
+    "techStack": ["JavaScript", "Node.js"]
+  }
+]

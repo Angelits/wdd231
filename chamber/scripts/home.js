@@ -194,7 +194,7 @@ async function loadSpotlights() {
 
       const card = document.createElement("div");
       card.className = "spotlight-card";
-      card.setAttribute("role", "listitem"); // accessibility improvement
+      card.setAttribute("role", "listitem"); 
       card.innerHTML = `
         <img src="${img}" alt="${name}" loading="lazy">
         <div class="spotlight-body">
@@ -212,6 +212,59 @@ async function loadSpotlights() {
     container.innerHTML = "<p style='color:#b00;'>Error loading spotlights.</p>";
   }
 }
+
+const dialog = document.getElementById("course-details");
+
+function showCourseDetails(course) {
+  if (!dialog) return;
+
+  dialog.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <p><strong>Title:</strong> ${course.title}</p>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Description:</strong> ${course.description}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Technology:</strong> ${course.techStack.join(", ")}</p>
+    <button class="close-btn">Close</button>
+  `;
+  
+  if (typeof dialog.showModal === "function") {
+    dialog.showModal();
+  } else {
+    alert("Dialog API not supported in this browser.");
+  }
+
+  dialog.querySelector(".close-btn").addEventListener("click", () => dialog.close());
+}
+
+dialog.addEventListener("click", (e) => {
+  const rect = dialog.getBoundingClientRect();
+  const inside =
+    e.clientX >= rect.left &&
+    e.clientX <= rect.right &&
+    e.clientY >= rect.top &&
+    e.clientX <= rect.right &&
+    e.clientY <= rect.bottom;
+  if (!inside) dialog.close();
+});
+
+// load courses dynamically
+fetch("data/courses.json")
+  .then((res) => res.json())
+  .then((data) => {
+    const container = document.getElementById("course-list");
+
+    data.forEach((course) => {
+      const card = document.createElement("div");
+      card.classList.add("course-card");
+      card.innerHTML = `
+        <h3>${course.subject} ${course.number}</h3>
+        <p>${course.title}</p>
+      `;
+      card.addEventListener("click", () => showCourseDetails(course));
+      container.appendChild(card);
+    });
+  });
 
 /* ====== FOOTER YEAR ====== */
 function setFooterYear() {

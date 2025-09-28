@@ -144,7 +144,6 @@ nav a {
   }
 }
 
-
 .cta-button {
   position: absolute;
   bottom: 1rem;
@@ -154,6 +153,47 @@ nav a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
+}
+
+#course-list {
+  display: flex;
+  flex-wrap: wrap;       /* allow wrapping to next row */
+  gap: 1.5rem;           /* spacing between cards */
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+#course-list .course-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;              /* less padding */
+  width: 220px;               /* a bit narrower */
+  max-height: 180px;          /* limit height */
+  overflow: hidden;           /* prevent overflow if text is too long */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+#course-list .course-card:hover {
+  transform: scale(1.03);
+  background-color: #fff3e6; /* light orange tone (fits your project scheme) */
+}
+
+/* Headings inside course cards */
+#course-list .course-card h3 {
+  margin-top: 0;
+  color: #8d340a; /* your brown accent color */
+}
+
+/* Paragraphs inside course cards */
+#course-list .course-card p {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 0.95rem;
 }
 
 main {

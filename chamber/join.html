@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Progreso Chamber of Commerce</title>
+  <meta name="description" content="Join the Progreso Chamber of Commerce and become a member.">
+  <meta name="author" content="Angela Ordaz">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/join.css"> 
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Progreso Chamber of Commerce | Home">
+  <meta property="og:description" content="Homepage for the Progreso Chamber of Commerce">
+  <meta property="og:image" src="images/progreso.jpg">
+  <meta property="og:url" content="https://angelits.github.io/wdd231/chamber/index.html">
+</head>
+<body>
+  <!-- Header -->
+  <header role="banner">
+    <span>Progreso Chamber of Commerce</span>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open main menu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+    <section class="form-section">
+      <form method="get" action="thankyou.html">
+        
+        <label>
+          First Name:
+          <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title:
+          <input type="text" name="orgTitle" title="Your role in the organization" 
+                 autocomplete="organization-title" 
+                 pattern="[A-Za-z\\-\\s]{7,}">
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" title="Enter your email address" 
+                 autocomplete="email" placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" title="Enter your mobile number" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Business/Organization Name:
+          <input type="text" name="organization" title="Organization name" 
+                 autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" title="Select membership level" required>
+            <option value="">--Select a Level--</option>
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business/Organization Description:
+          <textarea name="description" title="Business description"></textarea>
+        </label>
+
+        <!-- Hidden Timestamp -->
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application">
+      </form>
+
+      <!-- Membership Cards -->
+      <aside class="membership-cards">
+        <div class="card animate" id="np-card">
+          <h3>NP Membership</h3>
+          <p>No fee for non-profit organizations</p>
+          <a href="#np-modal" class="open-modal">Learn More</a>
+        </div>
+        <div class="card animate" id="bronze-card">
+          <h3>Bronze Membership</h3>
+          <p>Affordable entry-level benefits</p>
+          <a href="#bronze-modal" class="open-modal">Learn More</a>
+        </div>
+        <div class="card animate" id="silver-card">
+          <h3>Silver Membership</h3>
+          <p>More exposure and discounts</p>
+          <a href="#silver-modal" class="open-modal">Learn More</a>
+        </div>
+        <div class="card animate" id="gold-card">
+          <h3>Gold Membership</h3>
+          <p>Maximum benefits and promotions</p>
+          <a href="#gold-modal" class="open-modal">Learn More</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <dialog id="np-modal">
+    <h2>NP Membership Benefits</h2>
+    <ul>
+      <li>No membership fee</li>
+      <li>Access to networking events</li>
+      <li>Basic training sessions</li>
+    </ul>
+    <button class="close-modal">Close</button>
+  </dialog>
+
+  <dialog id="bronze-modal">
+    <h2>Bronze Membership Benefits</h2>
+    <ul>
+      <li>Spotlight advertising once a year</li>
+      <li>Discounted event tickets</li>
+      <li>Basic training sessions</li>
+    </ul>
+    <button class="close-modal">Close</button>
+  </dialog>
+
+  <dialog id="silver-modal">
+    <h2>Silver Membership Benefits</h2>
+    <ul>
+      <li>Spotlight advertising twice a year</li>
+      <li>Exclusive networking events</li>
+      <li>Training and workshops</li>
+      <li>Event discounts</li>
+    </ul>
+    <button class="close-modal">Close</button>
+  </dialog>
+
+  <dialog id="gold-modal">
+    <h2>Gold Membership Benefits</h2>
+    <ul>
+      <li>Unlimited spotlight advertising</li>
+      <li>VIP networking events</li>
+      <li>Advanced training packages</li>
+      <li>Highest event discounts</li>
+    </ul>
+    <button class="close-modal">Close</button>
+  </dialog>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="contact-info">
+      <p>5 en el pais, Progreso, Yucatán 222</p>
+      <p>Email: info@progre.org | Phone: (222) 135-7788</p>
+    </div>
+    <div class="social">
+      <a href="#"><img src="youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>WDD231 Class Project | Angela Ordaz</p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script>
+    
+    document.getElementById("timestamp").value = new Date().toISOString();
+
+    
+    document.querySelectorAll(".open-modal").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href")).showModal();
+      });
+    });
+    document.querySelectorAll(".close-modal").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.closest("dialog").close();
+      });
+    });
+  </script>
+</body>
+</html>
