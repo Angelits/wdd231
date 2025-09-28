@@ -6,6 +6,7 @@
   <title>Join | Progreso Chamber of Commerce</title>
   <meta name="description" content="Join the Progreso Chamber of Commerce and become a member.">
   <meta name="author" content="Angela Ordaz">
+  <link rel="icon" href="images/favicon(1).ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/join.css"> 
 
@@ -175,22 +176,7 @@
     <p id="last-modified"></p>
   </footer>
 
-  <script>
-    
-    document.getElementById("timestamp").value = new Date().toISOString();
+  <script src="scripts/join.js" defer></script>
 
-    
-    document.querySelectorAll(".open-modal").forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute("href")).showModal();
-      });
-    });
-    document.querySelectorAll(".close-modal").forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.closest("dialog").close();
-      });
-    });
-  </script>
 </body>
 </html>
