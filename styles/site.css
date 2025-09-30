@@ -1,0 +1,16 @@
+ body {
+      font-family: 'Bellefair', serif; 
+      color: #000; 
+      background-color: #fff; 
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Great Vibes', cursive; 
+      color: #8B0000; 
+    }
+
+    h2 {
+      color: #06402B; 
+    }
