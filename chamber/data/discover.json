@@ -1,0 +1,51 @@
+[
+  {
+    "title": "El Malecon",
+    "image": "images/P.webp",
+    "address": "Progreso, Yucatán, Mexico",
+    "description": "A popular beach with a long pier and vibrant local atmosphere."
+  },
+  {
+    "title": "El Corchito",
+    "image": "images/green.webp",
+    "address": "Progreso, Yucatán, Mexico",
+    "description": "A protected ecological reserve with cenotes and wildlife."
+  },
+  {
+    "title": "El Malecon",
+    "image": "images/malecon.webp",
+    "address": "Progreso, Yucatán, Mexico",
+    "description": "A scenic boardwalk lined with restaurants, shops, and ocean views."
+    
+  },
+  {
+    "title": "Casa de la Cultura",
+    "image": "images/casa.webp",
+    "address": "Calle 25, Progreso, Yucatán",
+    "description": "Cultural center offering art exhibitions, music, and community events."
+  },
+  {
+    "title": "Progreso Pier",
+    "image": "images/puerto.webp",
+    "address": "Progreso Port, Yucatán",
+    "description": "One of the longest piers in the world, stretching over 4 miles."
+  },
+  {
+    "title": "Dzibilchaltún Ruins",
+    "image": "images/dzi.webp",
+    "address": "15 km from Progreso, Yucatán",
+    "description": "Mayan ruins featuring the Temple of the Seven Dolls and cenote."
+  },
+  {
+    "title": "Reserva Ecológica El Palmar",
+    "image": "images/palmar.webp",
+    "address": "Celestún, near Progreso",
+    "description": "Ecological reserve famous for flamingos and mangroves."
+  },
+  {
+    "title": "Chicxulub Crater Museum",
+    "image": "images/crater.webp",
+    "address": "Chicxulub, Yucatán",
+    "description": "Museum about the asteroid impact that ended the dinosaur era."
+  }
+]

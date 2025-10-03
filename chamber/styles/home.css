@@ -6,6 +6,12 @@ body {
   color: #333;
 }
 
+.main-nav .logo img {
+  height: 50px;       /* adjust as needed */
+  width: auto;
+  align-items: left;
+}
+
 header {
   display: flex;
   justify-content: space-between;

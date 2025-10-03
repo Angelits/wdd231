@@ -18,6 +18,70 @@ header {
   text-align: center;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, links right */
+  padding: 0.5rem 1rem;
+  background-color: #b0ccf6;
+  position: relative;
+}
+
+/* Logo stays on the left */
+.main-nav .logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Nav links - right side */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile menu */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* below header */
+    right: 0;
+    background-color: #b0ccf6;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+  }
+}
+
+@media (min-width: 641px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 641px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 header h1 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
