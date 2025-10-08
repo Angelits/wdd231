@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merry and Bright: Elegant Christmas decorations for your home.">
+    <meta name="author" content="Your Name">
+    <title>Merry and Bright - Home</title>
+    <link rel="icon" href="images/faviconr.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Great+Vibes&display=swap" rel="stylesheet">
+
+     <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="Merry and Bright Christmas store" />
+  <meta property="og:description" content="Elegant and warm christmas decoration" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./index.html" />
+  <meta property="og:image" content="./assets/og-image.webp" />
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">🎄 Merry & Bright</div>
+            <button class="hamburger">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="decoration.html">Decorations</a></li>
+                <li><a href="deals.html">Deals & Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>About us</h1>
+            <p>Who we are and why shop with us:
+              We are a warm christmas decoration store, created to bring joy and the spirit of Christmas into your home. Our products are from the highest quality exported from denmark and while having your family hapiness in mind we create amazing deals for you and your loved ones. We are located in Heber city a magical winter town in Utah U.S 
+            </p>
+            <h2 class="gallery-heading">Some of our products</h2>
+            <div class="gallery">
+                <img src="images/tree.webp" alt="Christmas tree" loading="lazy">
+                <img src="images/village.webp" alt="Christmas Village" loading="lazy">
+                <img src="images/snow.webp" alt="Snowglobe" loading="lazy">
+                <img src="images/lights.webp" alt="Christmas Lights" loading="lazy">
+            </div>
+            <h1>Contact us</h1>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Send us a message</h2>
+                <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="inquiry">Inquiry</label>
+                <textarea id="inquiry" name="inquiry" required></textarea>
+
+                <button type="submit">Send</button>
+                </form>
+                <p id="confirmation" style="display:none; color:rgb(1, 66, 1); margin-top:10px;">Your message was sent! We will back to you ASAP 🎅</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Location: 6 S 300 W, Heber, UT 84046 | Phone 343-127-3987</p>
+        <p><a href="https://youtu.be/your-demo-link" target="_blank">Project Demo Video</a></p>
+    </footer>
+
+    <canvas id="snow"></canvas>
+    <script defer src="js/snow.js"></script>
+    <script defer src="scripts/main.js"></script>
+</body>
+</html>
