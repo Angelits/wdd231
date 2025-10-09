@@ -52,7 +52,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--padding);
+    padding: 10px 20px;
+}
+
+.nav-icon {
+  height: 50px;
+  width: auto;
+  justify-content: left;
 }
 
 .main-nav .logo {
