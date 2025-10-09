@@ -47,6 +47,7 @@ header {
     padding: var(--padding) 0;
 }
 
+/* ----- Desktop nav ----- */
 .main-nav {
     display: flex;
     justify-content: space-between;
@@ -66,7 +67,7 @@ header {
 
 .nav-links li a {
     color: var(--white);
-    font-size: 1.1rem;
+    font-size: 1.5rem; /* desktop size */
     position: relative;
     transition: color 0.3s, transform 0.3s;
 }
@@ -88,6 +89,7 @@ header {
     transform: scale(1.1);
 }
 
+/* Hamburger button hidden on desktop */
 .hamburger {
     display: none;
     font-size: 1.8rem;
@@ -97,26 +99,38 @@ header {
     cursor: pointer;
 }
 
-/* ===== Responsive Navigation ===== */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: var(--dark-red);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: var(--padding);
-        border-radius: 0 0 5px 5px;
-    }
-    .nav-links.show {
-        display: flex;
-        animation: slideIn 0.5s ease forwards;
-    }
-    .hamburger {
-        display: block;
-    }
+/* ===== Mobile navigation ===== */
+@media (max-width: 900px) {
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  
+  .nav-links {
+    display: none;          
+    flex-direction: column; 
+    position: absolute;
+    top: 60px;              
+    right: 0;
+    background-color: #8b0000;
+    width: 220px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    z-index: 1000;          
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  
+  .nav-links li a {
+    font-size: 1.5rem;  
+    color: white;
+    padding: 0.8rem 0;
+    transition: transform 0.3s, color 0.3s;
+  }
 }
 
 @keyframes slideIn {
@@ -164,9 +178,9 @@ main {
 
 .gallery-heading {
     font-family: 'Great Vibes', cursive;
-    color: #024602; /* makes the heading red */
+    color: #024602; 
     font-size: 2rem;
-    text-align: left; /* center the heading */
+    text-align: left; 
     margin-bottom: 1rem;
 }
 
@@ -182,14 +196,14 @@ main {
 
 @media screen and (max-width: 768px) {
     .gallery {
-        flex-wrap: wrap;       /* wrap items */
-        justify-content: center; /* center the grid */
+        flex-wrap: wrap;       
+        justify-content: center; 
     }
 
     .gallery img {
-        flex: 0 0 45%; /* two images per row */
+        flex: 0 0 45%; 
         max-width: 45%;
-        height: 250px; /* optional smaller height for mobile */
+        height: 250px; 
         margin: 5px;
     }
 }
@@ -257,7 +271,7 @@ form button:hover {
   width: 100%;
   flex-shrink: 0;
   object-fit: cover;
-  height: 300px; /* reduced height for a sleeker look */
+  height: 300px; 
 }
 
 .carousel-btn {
@@ -287,10 +301,20 @@ form button:hover {
   right: 20px;
 }
 
-/* ------------------- Decor Items Grid ------------------- */
+.decor-section h2 {
+  color: #024602; 
+  text-align: left;
+  font-family: "Great vibes";
+  font-size: 2rem;
+  margin-top: 2rem;   
+  margin-bottom: 1rem; 
+  padding-left: 0.5rem; 
+}
+
+
 .decor-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 15px;
   justify-items: center;
   padding: 0 1rem;
@@ -299,14 +323,14 @@ form button:hover {
 .decor-item {
   position: relative;
   width: 100%;
-  max-width: 350px; /* wider than before for better 4x3 fit */
+  max-width: 350px; 
   cursor: pointer;
   text-align: center;
 }
 
 .decor-item img {
   width: 100%;
-  height: 250px; /* same height for all images */
+  height: 250px; 
   object-fit: cover;
   border-radius: 10px;
   transition: filter 0.3s, transform 0.3s;
@@ -317,7 +341,7 @@ form button:hover {
   transform: scale(1.05);
 }
 
-/* Overlay text on click */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -332,11 +356,11 @@ form button:hover {
   color: black;
   font-family: "Bellefair", serif;
   font-size: large;
-  opacity: 0; /* hidden by default */
+  opacity: 0; 
   border-radius: 10px;
   transition: opacity 0.3s, background-color 0.3s;
   padding: 10px;
-  pointer-events: none; /* allows clicks to pass through to parent */
+  pointer-events: none; 
 }
 
 /* Active state when clicked */
@@ -351,7 +375,7 @@ form button:hover {
 /* Responsive for mobile */
 @media (max-width: 900px) {
   .decor-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet/mobile */
+    grid-template-columns: repeat(2, 1fr); 
   }
   .decor-item {
     max-width: 90%;
@@ -428,7 +452,7 @@ form button:hover {
 /* ------------------- Reviews Section ------------------- */
 .reviews-section {
   padding: 2rem 1rem;
-  background-color: #f8f8f8; /* light background to separate from deals */
+  background-color: #f8f8f8; 
   border-radius: 10px;
   max-width: 1000px;
   margin: 2rem auto;
@@ -483,7 +507,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ===== Spacing ===== */
+
 section {
     margin-bottom: 3rem;
 }

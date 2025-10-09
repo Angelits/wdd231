@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Classic Christmas Tree",
+    "price": "$70",
+    "image": "images/whitetree.jpg",
+    "category": "Indoor"
+  },
+  {
+    "name": "Christmas Lights",
+    "price": "$10",
+    "image": "images/lights.jpg",
+    "category": "Indoor"
+  },
+  {
+    "name": "Green Elegant Ornaments",
+    "price": "$29",
+    "image": "images/greenormaments.jpg",
+    "category": "Indoor"
+  },
+  {
+    "name": "Cute Garland",
+    "price": "$35",
+    "image": "images/garland.jpg",
+    "category": "Indoor"
+  },
+  {
+    "name": "Family Stockings",
+    "price": "$22",
+    "image": "images/cstockings.jpg",
+    "category": "Indoor"
+  },
+  {
+    "name": "Beautiful Wreath",
+    "price": "$31",
+    "image": "images/wreath.jpg",
+    "category": "Indoor"
+  },
+  {
+    "name": "Star Topper",
+    "price": "$18",
+    "image": "images/topper.webp",
+    "category": "Indoor"
+  },
+  {
+    "name": "Nativity Scene",
+    "price": "$40",
+    "image": "images/nativity.webp",
+    "category": "Indoor"
+  },
+  {
+    "name": "Dazzling Village",
+    "price": "$86",
+    "image": "images/village (1).webp",
+    "category": "Indoor"
+  },
+  {
+    "name": "Candy Canes",
+    "price": "$13",
+    "image": "images/candyc.webp",
+    "category": "Indoor"
+  },
+  {
+    "name": "Classic Candles",
+    "price": "$20",
+    "image": "images/candles.webp",
+    "category": "Indoor"
+  },
+  {
+    "name": "Table Decor",
+    "price": "$32",
+    "image": "images/table.webp",
+    "category": "Indoor"
+  },
+  {
+    "name": "LED Lights",
+    "price": "$40",
+    "image": "images/led.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Golden Wreath",
+    "price": "$27",
+    "image": "images/goldenw.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Elegant Outdoor Garland",
+    "price": "$30",
+    "image": "images/2garland.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Gorgeous Lit Yard Lights",
+    "price": "$90",
+    "image": "images/yard.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Shiny Blue Snowflakes",
+    "price": "$45",
+    "image": "images/snowflake.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Brown Lanterns",
+    "price": "$19",
+    "image": "images/lanterns.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Outdoor Nutcracker Figure",
+    "price": "$65",
+    "image": "images/nutcracker.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Religious Christmas Flag",
+    "price": "$12",
+    "image": "images/flag.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Golden Stars",
+    "price": "$39",
+    "image": "images/star.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Climbing Lit Santa",
+    "price": "$35",
+    "image": "images/climbings.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Gingerbread House Doormat",
+    "price": "$22",
+    "image": "images/doormat.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "name": "Great Archway Decoration",
+    "price": "$50",
+    "image": "images/arch.jpg",
+    "category": "Outdoor"
+  }
+]
