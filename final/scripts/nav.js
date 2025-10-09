@@ -12,10 +12,10 @@ navLinks.forEach(link => {
     const currentPath = window.location.pathname.split('/').pop();
     const targetPath = link.getAttribute('href');
 
-    // Prevent reload if clicking the same page
+    
     if (currentPath === targetPath) {
       e.preventDefault();
-      // optionally scroll to top
+      
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   });

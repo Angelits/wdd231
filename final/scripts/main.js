@@ -26,7 +26,7 @@ if (form) {
   });
 }
 
-// Example: Load decorations from JSON
+
 async function loadDecorations() {
   try {
     const res = await fetch('data/decorations.json');

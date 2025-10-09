@@ -13,13 +13,13 @@ async function loadProducts() {
       const section = document.createElement('div');
       section.className = 'decor-section';
 
-      // Heading
+      
       const h2 = document.createElement('h2');
       h2.textContent = title;
-      // styled by CSS //
+      
       section.appendChild(h2);
 
-      // Grid
+      
       const grid = document.createElement('div');
       grid.className = 'decor-grid';
 
@@ -38,7 +38,6 @@ async function loadProducts() {
       return section;
     }
 
-    // Append Indoor first, then Outdoor
     container.appendChild(createSection('Indoor Decorations', indoorProducts));
     container.appendChild(createSection('Outdoor Decorations', outdoorProducts));
 

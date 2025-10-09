@@ -18,21 +18,21 @@ prevButton.addEventListener('click', () => {
   updateSlide();
 });
 
-// Optional: Auto-play every 4s
+
 setInterval(() => {
   index = (index + 1) % slides.length;
   updateSlide();
 }, 4000);
 
-// Select all decor items
+
 const decorItems = document.querySelectorAll('.decor-item');
 
 decorItems.forEach(item => {
   item.addEventListener('click', () => {
-    // Toggle only the clicked item
+    
     item.classList.toggle('active');
   });
 });
 
-// Footer year
+
 document.getElementById('year').textContent = new Date().getFullYear();
